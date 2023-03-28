@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>FAQs</title>
+  <style>
+    i {
+      padding: 0px;
+    }
+
+    #nav-cont {
+      height: 100px;
+    }
+
+    #h2-ele {
+      font-size: 22px;
+      margin-left: 60px;
+    }
+
+    .navbar-nav {
+      margin-left: 200px;
+    }
+
+    .ibar {
+      margin-left: 180px;
+    }
+
+    .alinks {
+      text-decoration: none;
+      padding: 2px;
+      margin-right: 55px;
+      color: grey;
+      font-size: 17px;
+    }
+
+    .alinks:hover {
+      color: red;
+    }
+
+    .brand {
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    .brand:hover {
+      color: #FF4400;
+      cursor: pointer;
+    }
+
+
+    .person {
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .person:hover {
+      background-color: #FF4400;
+    }
+
+    .toggle {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+    }
+
+    .toggle .bar {
+      height: 3px;
+      width: 100%;
+      background-color: #000000;
+    }
+
+
+
+    .heading {
+      height: 400px;
+      width: 100%;
+      background-color: #e7f2f5;
+    }
+
+    .heading_cont {
+      padding: 60px;
+      font-size: 60px;
+      font-weight: 600;
+    }
+
+    .g_info {
+      margin: 20px;
+      margin-left: 100px;
+      width: 100%;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .about_products {
+      margin: 20px;
+      margin-left: 100px;
+      width: 100%;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 50px;
+      display: flex;
+      background-color: black;
+      justify-content: space-around;
+      height: 300px
+    }
+
+    .first {
+      margin-top: 80px;
+    }
+
+    .sec {
+      margin-top: 80px;
+      position: relative;
+    }
+
+    .thr {
+      margin-top: 80px;
+    }
+
+    .first h2 {
+      font-size: 30px;
+      margin-left: 5px;
+      color: whitesmoke;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+
+    }
+
+    .first h3 {
+      font-size: 20px;
+      margin-left: 5px;
+      color: grey;
+      font-family: sans-serif;
+    }
+
+    .sec h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      margin-left: 5px;
+      color: whitesmoke;
+      font-family: sans-serif;
+
+    }
+
+    .sec h3 {
+
+      font-size: 20px;
+      margin-left: 5px;
+      color: grey;
+      font-family: sans-serif;
+    }
+
+    .sec h3:hover,
+    .fo h3:hover {
+      color: white;
+    }
+
+    .thr h2 {
+      font-size: 30px;
+      margin-left: 5px;
+      color: whitesmoke;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .fo {
+      margin-left: 5px;
+      color: grey;
+      font-family: sans-serif;
+      margin-top: 140px;
+    }
+
+    .fo h3 {
+      font-size: 20px;
+    }
+
+    .empty {
+      background-color: white;
+      height: 100px;
+    }
+
+    .thr i {
+      margin: 3px;
+    }
+
+    .thr i:hover {
+      color: white;
+    }
+
+    .first a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .first a:hover {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-cont">
+    <div class="container-fluid">
+      <a id="h2-ele" class="navbar-brand" href="#">Little <b style="color: red;">Fashion</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="alinks" aria-current="page" href="index.html">Home</a>
+          <a class="alinks" href="story.html">Story</a>
+          <a class="alinks" href="product.html">Products</a>
+          <a class="alinks" href="zfaq.html">FAQs</a>
+          <a class="alinks" href="#">Contact</a>
+        </div>
+        <div class="ibar">
+          <a href="signin.html" class="alinks"><i style="font-size: 1.6rem;" class="bi bi-person"></i></a>
+          <a class="alinks"><i class="bi bi-bag" style="font-size: 1.3rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="heading">
+    <p class="heading_cont"><span style="color:#FF4400">Your favorite questions</span>
+      <br>and our answers to them
+    </p>
+  </div>
+  <br><br>
+  <div class="g_info">General Info.</div>
+  <div class="accordion" id="accordionExample" style="margin-left: 100px; width: 60%;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button style="height: 60px; font-size: 20px;" class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What is this Little Fashion?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Little Fashion</strong> is free Bootstrap 5 website template for everyone. There are 8 HTML pages
+          included in this template and you can expand more pages as you need.
+          <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button style="height: 60px; font-size: 20px;" class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What is Tooplate website?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Tooplate is a great website to download free HTML website templates for your business or personal use.
+          Tooplate website has been online for almost 8 years now. Thank you for visiting our website.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button style="height: 60px; font-size: 20px;" class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How do I support your website?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          You can support our Tooplate website by sharing it to your friends or colleagues on the web or social media.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="about_products">About <span style="color: #FF4400">our products</span></div>
+  <div class="accordion" id="accordionExample" style="margin-left: 100px; width: 60%;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button style="height: 60px; font-size: 20px;" class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What is Fashion Design?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Lorem ipsum dolor</strong>sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+          accumsan lacus vel facilisis.
+          <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button style="height: 60px; font-size: 20px;" class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How do I use the product?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing
+          layouts and visual mockups.
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="first">
+      <h2><a href="#top">Little</a> Fashion</h2>
+      <h3>Copyright © 2022 Little Fashion</h3>
+      <h3>Designed by Tooplate</h3>
+    </div>
+    <div class="sec">
+      <h2>Sitemap</h2>
+      <h3>Story</h3>
+      <h3>Products</h3>
+      <h3>Privacy policy</h3>
+    </div>
+
+    <div class="fo">
+      <h3>FAQs</h3>
+      <h3>Contact</h3>
+    </div>
+    <div class="thr">
+      <h2>Social</h2>
+      <i class="bi bi-youtube"></i>
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-skype"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="empty"></div>
+  </footer>
+</body>
+
+</html>

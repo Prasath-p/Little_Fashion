@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            margin-top:100px;
+            
+        }
+        h1{
+            font-weight: 900;
+            font-size:400%;
+            font-family: sans-serif;
+            margin-left:75px;
+            margin-bottom: 10px;
+        }
+        input{
+            line-height: 40px;
+            width: 90%;
+            margin: 20px;
+            font-size: 20px;
+            border-radius:10px;
+            border: none;
+            border: 1px solid black;
+            font-family: sans-serif;
+            padding: 2px;
+        }
+        input:hover{
+            border-style: solid;
+            border-color: rgb(170, 170, 255);
+           
+
+        }
+        button{
+            padding: 10px;
+            height: 70px;
+            width: 90%;
+            margin: 20px;
+            border-radius: 20px;
+            color: aliceblue;
+            background-color: black;
+            font-weight: 900;
+            font-size:200%;
+
+        }
+        button:hover{
+            color: white;
+            background-color: orangered;
+            border: none;
+            cursor: pointer;
+            text-shadow: 2px 3px 8px black;
+        }
+        footer{
+            margin-top: 150px;
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+            height: 300px
+        }
+        .one{
+            margin-top:10px;
+        }
+        .sec{
+            margin-top:10px;
+            position: relative;
+        }
+        .thr{
+            margin-top:10px;
+        }
+        .one h2{
+            font-size: 30px;
+            margin-left: 5px;
+            color: whitesmoke;
+            font-family: sans-serif;
+
+        }
+        .one h3{
+            font-size: 20px;
+            margin-left: 5px;
+            color:grey;
+            font-family: sans-serif;
+        }
+        
+        .sec h2{
+            font-size: 30px;
+            margin-left: 5px;
+            color: whitesmoke;
+            font-family: sans-serif;
+
+        }
+        .sec h3{
+            font-size: 20px;
+            margin-left: 5px;
+            color:grey;
+            font-family: sans-serif;
+        }
+        .sec h3:hover,.fo h3:hover{
+            color: white;
+        }
+        .thr h2{
+            font-size: 30px;
+            margin-left: 5px;
+            color: whitesmoke;
+            font-family: sans-serif;
+        }
+        .fo{
+            font-size: 20px;
+            margin-left: 5px;
+            color:grey;
+            font-family: sans-serif;
+            margin-top: 80px;
+        }
+        p{
+            font-size: 20px;
+            margin-left: 5px;
+            font-family: sans-serif; 
+            color: grey; 
+            margin-left: 30px;
+        }
+        a:hover{
+            color :red;
+            cursor: pointer;
+        }
+        a{
+            color: grey; 
+            text-decoration: none;
+        }
+        .empty{
+            background-color: white;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" >
+    <h1>Sign in</h1>
+    <input type="email" id="email" placeholder="Email" required autocomplete="off"><br>
+    <input type="password" id="psw" placeholder="password" required autocomplete="off"><br>
+    <button>Sign in</button>
+    <p>Don't have an account? <a href="signup.html">Create one</a></p>
+    </form>
+    <footer>
+        <div class="one">
+            <h2>Little Fashion</h2>
+            <h3>Copyright © 2022 Little Fashion</h3>
+               <h3>Designed by Tooplate</h3>
+        </div>
+        <div class="sec">
+            <h2>Sitemap</h2>
+            <h3>Story</h3>
+            <h3>Products</h3>
+            <h3>Privacy policy</h3>
+        </div>
+
+            <div class="fo">
+            <h3>FAQs</h3>
+            <h3>Contact</h3>
+            </div>
+        <div class="thr">
+            <h2>Social</h2>
+            <i class="bi bi-youtube" ></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-skype"></i>
+        </div>
+    </footer>
+    <div class="empty"></div>
+</body>
+</html>
